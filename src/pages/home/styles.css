@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+
+#banner{
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+}
+
+#trailer-container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    background-color: #4F4F4F;
+}
+
+.content {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.trailer{
+    width: 50%;
+}
+
+#sinopse{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+.description {
+    color: #fff;
+    font-size: 19px;
+    font-family: 'kdam thmor pro', sans-serif;
+    width: 70%;
+}
+
+.button {
+    width: 200px ;
+    height: 60px;
+    background-color: #000;
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .8s;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-top: 25px;
+}
+
+.button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+@media (max-width: 768px){
+    .footer-navigation{
+        display: block;
+    }
+
+    nav{
+        display: none;
+    }
+    #banner {
+        background-position: 10%;
+    }
+    
+    #trailer-container {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .content {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .trailer{
+        width: 100%;
+    }
+    
+    #sinopse {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-beetween;
+    
+    }
+    
+    .description {
+        width: 100%;
+    }
+    
+    .button{
+        width: 100%;
+        margin-top: 30px;
+    }
+    
+    .cards-content {
+        grid-template-columns: 1fr;
+        margin-top: 150px;
+    }   
+}
+
+
+
+@media (max-width: 768px) {
+    #banner {
+        height: 400px; /* Reduz a altura do banner */
+    }
+
+    #trailer-container {
+        height: auto; /* Ajusta a altura automaticamente */
+        flex-direction: column; /* Altera para coluna */
+        padding: 20px 0; /* Adiciona espaçamento vertical */
+        align-items: center; /* Centraliza os itens */
+    }
+
+    .content {
+        width: 100%; /* Aumenta a largura da content */
+        flex-direction: column; /* Organiza em coluna */
+        align-items: center; /* Centraliza os itens */
+        justify-content: center; /* Centraliza verticalmente */
+    }
+
+    .trailer, #sinopse {
+        width: 90%; /* Ambos ocupam 90% da largura */
+        margin-left: 0; /* Remove a margem lateral do sinopse */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .description {
+        width: 100%; /* Descrição ocupa toda a largura */
+        font-size: 16px; /* Reduz o tamanho da fonte */
+        text-align: center; /* Centraliza o texto */
+        margin: 0 auto; /* Centraliza o bloco */
+    }
+
+    .button {
+        width: 100%; /* Botão ocupa 100% da largura */
+        max-width: 300px; /* Define uma largura máxima */
+        margin: 15px auto 0; /* Ajusta o espaçamento e centraliza */
+    }
+}

@@ -1,0 +1,62 @@
+.actor-banners-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    background-color: #000;
+}
+
+.banners-content{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.banner-item{
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'kdam thmor pro', sans-serif;
+}
+
+.banner-item:hover{
+    transform: scale(1.02);
+}
+
+.banner-1 {
+    background-image: url('https://s2-gshow.glbimg.com/xYAmhSKt1wbw40gmXCOhj_scFSI=/0x0:1620x1000/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2019/P/n/B2T5lVS6GxcLLXuAAAmw/joaquin-phoenix-coringa-cinema-filme-3-.jpg');
+}
+.banner-2 {
+    background-image: url('https://cineset.com.br/wp-content/uploads/2019/10/Cr%C3%ADtica-Coringa-Joaquin-Phoenix-1.jpg');
+}
+.banner-3 {
+    background-image: url('https://d2d7ho1ae66ldi.cloudfront.net/ArquivoNoticias/16959764-5bb9-11ed-aa6e-9587410378a2/coringa-2.jpg');
+}
+.banner-4{
+    background-image: url('https://img.odcdn.com.br/wp-content/uploads/2022/08/coringa-lancamento.jpg');
+}
+.banner-5 {
+    background-image: url('https://alphamaes.com.br/wp-content/uploads/2019/10/coringa.jpg');
+}
+.banner-6 {
+    background-image: url('https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2024/04/Lady-Gaga-e-Joaquin-Phoenix-Coringa-Delirio-a-dois.png');
+}
+
+@media (max-width: 768px){
+    .banners-content {
+        grid-template-columns: 1fr;
+        margin-top: 10px;
+    }   
+}
